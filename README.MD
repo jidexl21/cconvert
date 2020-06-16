@@ -1,4 +1,4 @@
-# CConvert (cconvert.pl) `recommmended
+# CConvert (cconvert.pl) recommmended solution
 
 Converts cooordinates from GRCh37, to GRCh38
 Uses ensembl JSON api
