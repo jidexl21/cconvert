@@ -1,7 +1,8 @@
-# CConvert (cconvert.pl) recommmended
+# CConvert (cconvert.pl) `recommmended
 
-Converts cooordinates from GRCh to GRCh38
+Converts cooordinates from GRCh37, to GRCh38
 Uses ensembl JSON api
+fast operation minimal dependencies and quick setup
 
 
 # Usage
@@ -40,7 +41,7 @@ Uses ensembl JSON api
 #### query
 query format chromosome:start..end:strand from_assembly to_assembly
 * chromosome: accepts a double digit numeric value or X
-* Start: The start index a numeric value
+* start: The start index a numeric value
 * end: the end index
 * strand: optional, default value is 1 accepts +1, 1, or -1
 
@@ -48,7 +49,7 @@ query format chromosome:start..end:strand from_assembly to_assembly
 Assembly to convert from e.g. GrCh37, NCBI36
 
 #### to (optional)
-default value is 2
+default value is GrCh38 accepts GrCh37 or GrCh38 (case insensitive)
 
 ## Examples
 
@@ -62,7 +63,7 @@ default value is 2
 `./convert_coord.pl X:1000000..1001000:1 GrCH36 GrCh37`
 
 # Installation
-setup dependencies following the examples at http://www.ensembl.org/info/docs/api/api_installation.html
+setup dependencies following the dcoumentation at http://www.ensembl.org/info/docs/api/api_installation.html
 * Download this file
 * Enable Script: 
 `chmod +x convert_coord.pl`
